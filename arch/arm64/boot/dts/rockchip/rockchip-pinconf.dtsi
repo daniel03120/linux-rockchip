@@ -4,19 +4,22 @@
  */
 
 &pinctrl {
-	/omit-if-no-ref/
+	
 	pcfg_pull_up: pcfg-pull-up {
 		bias-pull-up;
+		phandle = <0x110>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_down: pcfg-pull-down {
 		bias-pull-down;
+		phandle = <0x118>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_none: pcfg-pull-none {
 		bias-disable;
+		phandle = <0x10e>;
 	};
 
 	/omit-if-no-ref/
@@ -25,22 +28,25 @@
 		drive-strength = <0>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_none_drv_level_1: pcfg-pull-none-drv-level-1 {
 		bias-disable;
 		drive-strength = <1>;
+		phandle = <0x112>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_none_drv_level_2: pcfg-pull-none-drv-level-2 {
 		bias-disable;
 		drive-strength = <2>;
+		phandle = <0x111>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_none_drv_level_3: pcfg-pull-none-drv-level-3 {
 		bias-disable;
 		drive-strength = <3>;
+		phandle = <0x116>;
 	};
 
 	/omit-if-no-ref/
@@ -121,16 +127,18 @@
 		drive-strength = <0>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_up_drv_level_1: pcfg-pull-up-drv-level-1 {
 		bias-pull-up;
 		drive-strength = <1>;
+		phandle = <0x115>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_up_drv_level_2: pcfg-pull-up-drv-level-2 {
 		bias-pull-up;
 		drive-strength = <2>;
+		phandle = <0x10f>;
 	};
 
 	/omit-if-no-ref/
@@ -223,10 +231,11 @@
 		drive-strength = <1>;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_down_drv_level_2: pcfg-pull-down-drv-level-2 {
 		bias-pull-down;
 		drive-strength = <2>;
+		phandle = <0x117>;
 	};
 
 	/omit-if-no-ref/
@@ -319,10 +328,11 @@
 		input-schmitt-enable;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_pull_none_smt: pcfg-pull-none-smt {
 		bias-disable;
 		input-schmitt-enable;
+		phandle = <0x113>;
 	};
 
 	/omit-if-no-ref/
@@ -390,9 +400,10 @@
 		bias-disable;
 	};
 
-	/omit-if-no-ref/
+	
 	pcfg_output_low: pcfg-output-low {
 		output-low;
+		phandle = <0x114>;
 	};
 
 	/omit-if-no-ref/
